@@ -57,7 +57,15 @@ export function RegisterDialog({
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog
+      open={open}
+      onOpenChange={(nextOpen) => {
+        setOpen(nextOpen);
+        if (nextOpen) {
+          setTime(getCurrentTime());
+        }
+      }}
+    >
       <DialogTrigger>
         <Button>
           <UserPlus className="h-4 w-4" />

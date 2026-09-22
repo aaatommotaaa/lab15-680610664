@@ -44,12 +44,12 @@ export const courses: Course[] = [
 // enrolledAt: เวลาตัวอย่างที่ลงทะเบียนไว้แล้ว (ไว้แสดง "ลงทะเบียนเมื่อ" บนการ์ด)
 export const enrollments: Enrollment[] = [
   {
-    studentId: "650610002",
+    studentId: "680610664",
     courseId: "261207",
     enrolledAt: "2026-09-13T14:15:00",
   },
   {
-    studentId: "650610002",
+    studentId: "680610664",
     courseId: "261497",
     enrolledAt: "2026-09-14T09:30:00",
   },
