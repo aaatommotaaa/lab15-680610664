@@ -8,6 +8,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { currentStudent } from "@/lib/mock-data"; // ← เพิ่มบรรทัดนี้
 
 export default function RootLayout() {
   return (
@@ -25,6 +26,10 @@ export default function RootLayout() {
         <main className="flex-1 p-4">
           <Outlet />
         </main>
+
+        <footer className="border-t px-4 py-3 text-center text-xs text-muted-foreground">
+          จัดทำโดย ชนิดาภา ไพรินทราภา รหัสนักศึกษา 680610664
+        </footer>
       </SidebarInset>
     </SidebarProvider>
   );
