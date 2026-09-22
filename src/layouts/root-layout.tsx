@@ -8,7 +8,6 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { currentStudent } from "@/lib/mock-data"; // ← เพิ่มบรรทัดนี้
 
 export default function RootLayout() {
   return (
